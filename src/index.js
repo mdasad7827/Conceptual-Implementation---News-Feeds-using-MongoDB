@@ -3,7 +3,7 @@ const app = express();
 const port = 8080;
 
 const onePageArticleCount = 10;
-const newsArticleModel = require("./connector");
+const {newsArticleModel} = require("./connector");
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.urlencoded({ extended: false }));
